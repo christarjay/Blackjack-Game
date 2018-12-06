@@ -40,6 +40,19 @@ newGame.addEventListener('click', function() {
   showStatus();
 });
 
+
+hitButton.addEventListener('click', function() {
+  playerCards.push(getNextCard());
+  checkForEndOfGame();
+  showStatus();
+});
+
+stayButton.addEventListener('click', function() {
+  gameOver = true;
+  checkForEndOfGame();
+  showStatus();
+});
+
 //function creates new deck with each new game
 function createDeck() {
   let deck = [];
@@ -55,7 +68,6 @@ function createDeck() {
   return deck;
 }
 
-//swaping deck i with swap index
 function shuffleDeck(deck) {
   for (let i = 0; i < deck.length; i++) {
     let swapIdx = Math.trunc(Math.random() * deck.length);
@@ -152,9 +164,6 @@ function checkForEndOfGame() {
     else {
       playerWon = false;
     }
-      // newGame.style.display = 'inline';
-      // hitButton.style.display = 'none';
-      // stayButton.style.display = 'none';
   }
 }
 
@@ -196,15 +205,3 @@ function showStatus () {
     stayButton.style.display = 'none';
   }
 }
-
-hitButton.addEventListener('click', function() {
-  playerCards.push(getNextCard());
-  checkForEndOfGame();
-  showStatus();
-});
-
-stayButton.addEventListener('click', function() {
-  gameOver = true;
-  checkForEndOfGame();
-  showStatus();
-});
