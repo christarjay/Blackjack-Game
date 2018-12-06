@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'Milonga', cursive;
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+button {
+  border-radius: 5px;
+  padding: 5px;
+  width: 75px;
+}
+
+.hit {
+  color: #28f606
+}
+
+.stay {
+  color: #f90505
+}
