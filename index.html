@@ -3,19 +3,26 @@
 
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Twenty-One Blackjack</title>
+    <link href="https://fonts.googleapis.com/css?family=Milonga|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
   </head>
 
-  <body>
-    <h1 id="title">Twenty-One Blackjack</h1>
-    <h4 id="creator">created by Christa Johnson</h4>
-
-    <p>Welcome to Blackjack!</p>
-    <p id="text-area"></p>
-    <button id="new-game">New Game</button>
-    <button id="hit">Hit</button>
-    <button id="stay">Stay</button>
+  <body class="bg-img">
+    <header>
+      <h1 id="title">Twenty-One Blackjack</h1>
+      <h4 id="creator">created by Christa Johnson</h4>
+    </header>
+    <main>
+      <p>Welcome to Blackjack!</p>
+      <div>
+        <p id="text-area"></p>
+      </div>
+      <button id="new-game">New Game</button>
+      <button id="hit" class="btn hit">Hit</button>
+      <button id="stay" class="btn stay">Stay</button>
+    </main>
 
     <script src="blackjack.js"></script>
   </body>
