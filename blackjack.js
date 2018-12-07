@@ -169,7 +169,7 @@ function checkForEndOfGame() {
 
 function showStatus () {
   if (!gameStarted) {
-    textArea.innerText = 'Let\'s Play!';
+    textArea.innerText = 'Play Me...';
     return;
   }
 
