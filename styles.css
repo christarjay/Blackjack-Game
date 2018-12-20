@@ -7,9 +7,6 @@ body {
   background-color: #000603;
 }
 
-/* .bg-img {
-  background: url(/images/blackjack-background.jpg) no-repeat contain;
-} */
 header {
   background-color: white;
   padding: 2px;
@@ -38,10 +35,6 @@ button {
   padding: 5px;
   background-color: #827b81;
   color: #f4f905;
-}
-
-button:hover {
-  box-shadow: 0 0 20px 5px #33b4c6;
 }
 
 .hit {
